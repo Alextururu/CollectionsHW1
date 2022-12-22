@@ -17,7 +17,7 @@ namespace CollectionsHW1
             //Проверяем производительность вставки в обычный список
             var stopWatch = Stopwatch.StartNew();
             List<string> SimpleList = new List<string>();
-            foreach (string line in readText.Split(new char[] { '\n', '\r' }))
+            foreach (string line in readText.Split(new char[] { '\n', '\r', ' ' }))
             {
                 SimpleList.Add(line);
             }
@@ -26,7 +26,7 @@ namespace CollectionsHW1
             //Проверяем производительность вставки в связный список
             var stopWatch1 = Stopwatch.StartNew();
             LinkedList<string> LinkedList = new LinkedList<string>();
-            foreach (string line in readText.Split(new char[] { '\n', '\r' }))
+            foreach (string line in readText.Split(new char[] { '\n', '\r', ' ' }))
             {
                 LinkedList.AddLast(line);
             }
